@@ -1,3 +1,4 @@
 dist/
 node_modules/
-.railway/
+.railway/*
+!.railway/railway.ts

@@ -1,3 +1,4 @@
+document.body.classList.add('has-js');
 const menu=document.querySelector('.menu-button');
 const nav=document.querySelector('#navigation');
 menu?.addEventListener('click',()=>{
