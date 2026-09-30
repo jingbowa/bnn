@@ -23,3 +23,14 @@ jobs:
           OMP_NUM_THREADS: '4'
           MKL_NUM_THREADS: '4'
       - run: python examples/regression.py
+  website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/*.test.mjs
+        working-directory: website
+      - run: node build.mjs && node scripts/check-site.mjs
+        working-directory: website
