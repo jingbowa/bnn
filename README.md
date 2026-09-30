@@ -4,6 +4,9 @@ Nonparametric estimation through the distribution of nearest neighbors: a Python
 package, algorithm notes, reproducible examples, and paper replication materials.
 Research resource: [jingbowa.github.io/bnn](https://jingbowa.github.io/bnn/).
 
+Explore: [theory](docs/theory.md) · [algorithms](docs/algorithms.md) ·
+[replication](docs/replication.md) · [verification](docs/verification.md).
+
 BNN averages nearest-neighbor predictions over subsamples drawn **without
 replacement**, evaluated through exact rank weights. It is the **distributional
 nearest-neighbor (DNN)** estimator in the JASA paper. **Two-scale DNN (TDNN)**
