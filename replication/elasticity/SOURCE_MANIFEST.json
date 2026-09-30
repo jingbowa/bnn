@@ -1,0 +1,692 @@
+{
+  "repository": "jingbowa/elasticity_minor_round",
+  "commit": "eeed35e0eaa8250d1562e92cdba3219ad26ca99f",
+  "exported": [
+    {
+      "path": "README.md",
+      "source_path": "final_submission/replication_package/README.md",
+      "blob_sha": "e1ebc0bb13f78a94b7407f397444e3c65ea4cf2e",
+      "bytes": 1765
+    },
+    {
+      "path": "empirical/README.md",
+      "source_path": "final_submission/replication_package/empirical/README.md",
+      "blob_sha": "2e778e0be2436e1281b2421dd09a49fc141f2522",
+      "bytes": 5945
+    },
+    {
+      "path": "empirical/bnn_modules/__init__.py",
+      "source_path": "final_submission/replication_package/empirical/bnn_modules/__init__.py",
+      "blob_sha": "f993ef0dc9b7fc4be7c87c039d01057a285d4147",
+      "bytes": 81
+    },
+    {
+      "path": "empirical/bnn_modules/bnn_torch.py",
+      "source_path": "final_submission/replication_package/empirical/bnn_modules/bnn_torch.py",
+      "blob_sha": "ecb899dd61e6c97aa4d9804cf400d0d23a011a64",
+      "bytes": 4603
+    },
+    {
+      "path": "empirical/code_latest/step1_data_preparation/1_prepare_gasoline.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step1_data_preparation/1_prepare_gasoline.py",
+      "blob_sha": "0245ed4890a9a7d7bc954fd097f7d4342a9f350b",
+      "bytes": 3757
+    },
+    {
+      "path": "empirical/code_latest/step1_data_preparation/2_prepare_zones.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step1_data_preparation/2_prepare_zones.py",
+      "blob_sha": "c28492e4d135d9d304e81a7ed736e511db9eda09",
+      "bytes": 2813
+    },
+    {
+      "path": "empirical/code_latest/step1_data_preparation/3_prepare_zone_distances.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step1_data_preparation/3_prepare_zone_distances.py",
+      "blob_sha": "47fab1dfe41a3295e9f56605edb7704d1754e515",
+      "bytes": 1766
+    },
+    {
+      "path": "empirical/code_latest/step1_data_preparation/4_prepare_trips.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step1_data_preparation/4_prepare_trips.py",
+      "blob_sha": "242c4e5352aef13348ddcd277dce487a77e85ba8",
+      "bytes": 8439
+    },
+    {
+      "path": "empirical/code_latest/step2_analysis_preparation/1_identify_high_traffic_zones.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step2_analysis_preparation/1_identify_high_traffic_zones.py",
+      "blob_sha": "24c521c350b05ce2b9fe03eb1a0243486f3ca94a",
+      "bytes": 7858
+    },
+    {
+      "path": "empirical/code_latest/step2_analysis_preparation/2_aggregate_to_markets.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step2_analysis_preparation/2_aggregate_to_markets.py",
+      "blob_sha": "bfa5b4452104bfbc407146b2686acca9f346067c",
+      "bytes": 14274
+    },
+    {
+      "path": "empirical/code_latest/step3_elasticity_estimation/2a_estimate_zone_elasticity_all_nyc.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step3_elasticity_estimation/2a_estimate_zone_elasticity_all_nyc.py",
+      "blob_sha": "f0b42a6e56b329f42193bd49ed1d2bcd1fb48fdf",
+      "bytes": 14258
+    },
+    {
+      "path": "empirical/code_latest/step3_elasticity_estimation/2b_estimate_zone_elasticity_manhattan.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step3_elasticity_estimation/2b_estimate_zone_elasticity_manhattan.py",
+      "blob_sha": "e7046ce3689edfbe801b7a8fd8e3c976c45c0a57",
+      "bytes": 15521
+    },
+    {
+      "path": "empirical/code_latest/step3_elasticity_estimation/3_estimate_temporal_elasticity.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step3_elasticity_estimation/3_estimate_temporal_elasticity.py",
+      "blob_sha": "293f9e64b865eaaf0f44242883eb51f1b61b18d1",
+      "bytes": 13451
+    },
+    {
+      "path": "empirical/code_latest/step3_elasticity_estimation/config_quality_filters.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/step3_elasticity_estimation/config_quality_filters.py",
+      "blob_sha": "b54278faf39b4fe3b65b54ecb6d04c8ae61b569a",
+      "bytes": 2015
+    },
+    {
+      "path": "empirical/code_latest/utilities/visualize_all_nyc_elasticity_map.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/utilities/visualize_all_nyc_elasticity_map.py",
+      "blob_sha": "eb807f979d4102fa1c271f92144c3c92a49dc494",
+      "bytes": 21571
+    },
+    {
+      "path": "empirical/code_latest/utilities/visualize_manhattan_elasticity_map.py",
+      "source_path": "final_submission/replication_package/empirical/code_latest/utilities/visualize_manhattan_elasticity_map.py",
+      "blob_sha": "8b4ecbc29c03b1fd8a780bdff3089c3e40357830",
+      "bytes": 19880
+    },
+    {
+      "path": "empirical/data/New_York_City_Regular_All_Formulations_Retail_Gasoline_Prices.csv",
+      "source_path": "final_submission/replication_package/empirical/data/New_York_City_Regular_All_Formulations_Retail_Gasoline_Prices.csv",
+      "blob_sha": "8669f4d38c96438553f84fa9d1931cd6cb363e6f",
+      "bytes": 3913
+    },
+    {
+      "path": "empirical/data/taxi_zone_lookup.csv",
+      "source_path": "final_submission/replication_package/empirical/data/taxi_zone_lookup.csv",
+      "blob_sha": "5abd72f8c44f31b0f5795d46898a8e87f58f0f8b",
+      "bytes": 12065
+    },
+    {
+      "path": "empirical/data/taxi_zones/taxi_zones.dbf",
+      "source_path": "final_submission/replication_package/empirical/data/taxi_zones/taxi_zones.dbf",
+      "blob_sha": "60703a7452b073826894864ee72d83c50eee0d1e",
+      "bytes": 147506
+    },
+    {
+      "path": "empirical/data/taxi_zones/taxi_zones.prj",
+      "source_path": "final_submission/replication_package/empirical/data/taxi_zones/taxi_zones.prj",
+      "blob_sha": "b68d8514cabc051dfee7a70de5381953d4c0ac1c",
+      "bytes": 562
+    },
+    {
+      "path": "empirical/data/taxi_zones/taxi_zones.sbn",
+      "source_path": "final_submission/replication_package/empirical/data/taxi_zones/taxi_zones.sbn",
+      "blob_sha": "4cc2308bd3cb2ff7c873fa6aa7a3579c585995d4",
+      "bytes": 2908
+    },
+    {
+      "path": "empirical/data/taxi_zones/taxi_zones.sbx",
+      "source_path": "final_submission/replication_package/empirical/data/taxi_zones/taxi_zones.sbx",
+      "blob_sha": "4a7f387d0b2ed1a46ee775498efd5c2edf163e3f",
+      "bytes": 348
+    },
+    {
+      "path": "empirical/data/taxi_zones/taxi_zones.shp",
+      "source_path": "final_submission/replication_package/empirical/data/taxi_zones/taxi_zones.shp",
+      "blob_sha": "7dd33d2b6ee9e732e2998b9458781c9a4c2aa848",
+      "bytes": 1586264
+    },
+    {
+      "path": "empirical/data/taxi_zones/taxi_zones.shp.xml",
+      "source_path": "final_submission/replication_package/empirical/data/taxi_zones/taxi_zones.shp.xml",
+      "blob_sha": "cb01ac97dc3400bacfbaa8aa0c93619cc11c110f",
+      "bytes": 905
+    },
+    {
+      "path": "empirical/data/taxi_zones/taxi_zones.shx",
+      "source_path": "final_submission/replication_package/empirical/data/taxi_zones/taxi_zones.shx",
+      "blob_sha": "00fef0998adb6124d3d25cf56b428745813baa37",
+      "bytes": 2204
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_all_nyc_borough_summary.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_all_nyc_borough_summary.csv",
+      "blob_sha": "8414e621d17c13ca35c34cacfecf81a07a810b95",
+      "bytes": 1058
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_all_nyc_elasticity_map.png",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_all_nyc_elasticity_map.png",
+      "blob_sha": "bd8dc870c7a811af70fb0e549481c983354fe453",
+      "bytes": 806424
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_all_nyc_pre_winsorization_all_zones.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_all_nyc_pre_winsorization_all_zones.csv",
+      "blob_sha": "b64a41b6cb04650b9e882fa0fbe9f8fa46fca517",
+      "bytes": 707
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_all_nyc_pre_winsorization_quality_zones.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_all_nyc_pre_winsorization_quality_zones.csv",
+      "blob_sha": "d21a6eaf624d609489ea3e367a1587480ac834c4",
+      "bytes": 804
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_all_nyc_pre_winsorization_stats.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_all_nyc_pre_winsorization_stats.csv",
+      "blob_sha": "9fbd89d582c8e66520e1babdacf39273e0f13c95",
+      "bytes": 612
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_all_nyc_winsorization_stats.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_all_nyc_winsorization_stats.csv",
+      "blob_sha": "e8a26ca7b0756578a7d6365972e4bbf37c4109f4",
+      "bytes": 1877
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_manhattan_elasticity_map.pdf",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_manhattan_elasticity_map.pdf",
+      "blob_sha": "4334bba96f456594ac8825d50630ccd67a951258",
+      "bytes": 108903
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_manhattan_elasticity_map.png",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_manhattan_elasticity_map.png",
+      "blob_sha": "4a36c831eb62b2e567ceb8c88951f79ed4ee62ca",
+      "bytes": 209485
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_manhattan_pre_winsorization_stats.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_manhattan_pre_winsorization_stats.csv",
+      "blob_sha": "9f0fbf01f362573de9791330026c704af3225a97",
+      "bytes": 617
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_manhattan_summary.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_manhattan_summary.csv",
+      "blob_sha": "e97d36aaf7ea712c011caf690572ab87072a49dd",
+      "bytes": 455
+    },
+    {
+      "path": "empirical/outputs/figures/step3_fig_manhattan_winsorization_stats.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/figures/step3_fig_manhattan_winsorization_stats.csv",
+      "blob_sha": "a3adb9389874e65254e7dbd8ad60a4373130850d",
+      "bytes": 982
+    },
+    {
+      "path": "empirical/outputs/step1_processed_data/gas_prices/step1_gas_prices.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step1_processed_data/gas_prices/step1_gas_prices.csv",
+      "blob_sha": "4fd9bf1fd4728f1c0b21dc20e8bd9a7fe360053b",
+      "bytes": 7428
+    },
+    {
+      "path": "empirical/outputs/step1_processed_data/gas_prices/step1_gas_prices_lookup.json",
+      "source_path": "final_submission/replication_package/empirical/outputs/step1_processed_data/gas_prices/step1_gas_prices_lookup.json",
+      "blob_sha": "66c057c650473c9ae24c29b56cb5c91390f59b47",
+      "bytes": 5455
+    },
+    {
+      "path": "empirical/outputs/step1_processed_data/trips/samples/step1_trips_2024-01_sample.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step1_processed_data/trips/samples/step1_trips_2024-01_sample.csv",
+      "blob_sha": "092f10749b60acf5d00d1ba09f91e1db4d9519e1",
+      "bytes": 523723
+    },
+    {
+      "path": "empirical/outputs/step1_processed_data/trips/samples/step1_trips_2024-02_sample.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step1_processed_data/trips/samples/step1_trips_2024-02_sample.csv",
+      "blob_sha": "b96d1a9eab7a706e3330f3488e118696365ec605",
+      "bytes": 523913
+    },
+    {
+      "path": "empirical/outputs/step1_processed_data/zones/step1_zone_coordinates.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step1_processed_data/zones/step1_zone_coordinates.csv",
+      "blob_sha": "d9744b759567630cfccb22c1238b5c2481d9ebd5",
+      "bytes": 10602
+    },
+    {
+      "path": "empirical/outputs/step1_processed_data/zones/step1_zone_distances.json",
+      "source_path": "final_submission/replication_package/empirical/outputs/step1_processed_data/zones/step1_zone_distances.json",
+      "blob_sha": "5c7ed76fe73507bc4af5ffb988c10048abc0363f",
+      "bytes": 2265204
+    },
+    {
+      "path": "empirical/outputs/step1_processed_data/zones/step1_zones.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step1_processed_data/zones/step1_zones.csv",
+      "blob_sha": "3a70813c20a2540e98a13ef271c9db97a32d0c65",
+      "bytes": 10440
+    },
+    {
+      "path": "empirical/outputs/step2_aggregated_markets/markets/samples/step2_markets_2024-01_sample.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step2_aggregated_markets/markets/samples/step2_markets_2024-01_sample.csv",
+      "blob_sha": "00c8014450425264ee671f61ea1757d6f063a45f",
+      "bytes": 17483
+    },
+    {
+      "path": "empirical/outputs/step2_aggregated_markets/markets/samples/step2_markets_2024-02_sample.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step2_aggregated_markets/markets/samples/step2_markets_2024-02_sample.csv",
+      "blob_sha": "79ceb56cee061ae7711dffdf6eb8247a5f8d7dc1",
+      "bytes": 17202
+    },
+    {
+      "path": "empirical/outputs/step2_aggregated_markets/zone_selection/step2_restriction_summary.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step2_aggregated_markets/zone_selection/step2_restriction_summary.csv",
+      "blob_sha": "33578bb4a2884a48715f996796b4c9b8a6ceda6d",
+      "bytes": 245
+    },
+    {
+      "path": "empirical/outputs/step2_aggregated_markets/zone_selection/step2_routes_popular.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step2_aggregated_markets/zone_selection/step2_routes_popular.csv",
+      "blob_sha": "8586bb93d0ff51f410ec2a1c9aea8abb63dcfa75",
+      "bytes": 2131108
+    },
+    {
+      "path": "empirical/outputs/step2_aggregated_markets/zone_selection/step2_zones_dropoff_popular.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step2_aggregated_markets/zone_selection/step2_zones_dropoff_popular.csv",
+      "blob_sha": "0a9f23a87aa014c0b3eb0e19915245cce740db79",
+      "bytes": 6846
+    },
+    {
+      "path": "empirical/outputs/step2_aggregated_markets/zone_selection/step2_zones_pickup_popular.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step2_aggregated_markets/zone_selection/step2_zones_pickup_popular.csv",
+      "blob_sha": "18670f8ddfa74cdb80844805f2f162c107e04ef9",
+      "bytes": 6848
+    },
+    {
+      "path": "empirical/outputs/step2_aggregated_markets/zone_selection/step2_zones_selected.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step2_aggregated_markets/zone_selection/step2_zones_selected.csv",
+      "blob_sha": "f4cc3b827ccb283a51c84a6a9f3a81374e98df14",
+      "bytes": 2027
+    },
+    {
+      "path": "empirical/outputs/step3_elasticity_estimates/step3_elasticity_temporal_periods.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step3_elasticity_estimates/step3_elasticity_temporal_periods.csv",
+      "blob_sha": "2a0c552e9fd153504d0e21c88ed53290f7d223e2",
+      "bytes": 779
+    },
+    {
+      "path": "empirical/outputs/step3_elasticity_estimates/step3_elasticity_zones_all_nyc.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step3_elasticity_estimates/step3_elasticity_zones_all_nyc.csv",
+      "blob_sha": "1235f43d2807656a8a00e35ecfce988956b1c782",
+      "bytes": 9254
+    },
+    {
+      "path": "empirical/outputs/step3_elasticity_estimates/step3_elasticity_zones_manhattan.csv",
+      "source_path": "final_submission/replication_package/empirical/outputs/step3_elasticity_estimates/step3_elasticity_zones_manhattan.csv",
+      "blob_sha": "c59c6dbefdd67e66e9b70fa4a9e1f3272710b7b8",
+      "bytes": 5775
+    },
+    {
+      "path": "empirical/requirements.txt",
+      "source_path": "final_submission/replication_package/empirical/requirements.txt",
+      "blob_sha": "be148ca1e9604cf178849b79c1267c91580a56a5",
+      "bytes": 379
+    },
+    {
+      "path": "simulation/DGP_models/__init__.py",
+      "source_path": "final_submission/replication_package/simulation/DGP_models/__init__.py",
+      "blob_sha": "f993ef0dc9b7fc4be7c87c039d01057a285d4147",
+      "bytes": 81
+    },
+    {
+      "path": "simulation/DGP_models/model_module_blp.py",
+      "source_path": "final_submission/replication_package/simulation/DGP_models/model_module_blp.py",
+      "blob_sha": "651b849bbda33bc24418f30729fc85b5c1eea1b0",
+      "bytes": 10139
+    },
+    {
+      "path": "simulation/DGP_models/model_module_extra.py",
+      "source_path": "final_submission/replication_package/simulation/DGP_models/model_module_extra.py",
+      "blob_sha": "81c8004a934f2ad6dec390dc58b4698511126e1e",
+      "bytes": 7310
+    },
+    {
+      "path": "simulation/DGP_models/model_module_rf.py",
+      "source_path": "final_submission/replication_package/simulation/DGP_models/model_module_rf.py",
+      "blob_sha": "0bc7b297ef9ddaf8bca9ccafc0356cdd9851cdb0",
+      "bytes": 3466
+    },
+    {
+      "path": "simulation/DGP_models/model_module_torch.py",
+      "source_path": "final_submission/replication_package/simulation/DGP_models/model_module_torch.py",
+      "blob_sha": "726553a7ed792256f74015e08e659fcf18f2e281",
+      "bytes": 4509
+    },
+    {
+      "path": "simulation/README.md",
+      "source_path": "final_submission/replication_package/simulation/README.md",
+      "blob_sha": "b106221c5ae215afa1c6827cb496f8b9738d530b",
+      "bytes": 12398
+    },
+    {
+      "path": "simulation/bnn_modules/__init__.py",
+      "source_path": "final_submission/replication_package/simulation/bnn_modules/__init__.py",
+      "blob_sha": "f993ef0dc9b7fc4be7c87c039d01057a285d4147",
+      "bytes": 81
+    },
+    {
+      "path": "simulation/bnn_modules/bnn_module_supply.py",
+      "source_path": "final_submission/replication_package/simulation/bnn_modules/bnn_module_supply.py",
+      "blob_sha": "b79af85b0f36bdae08ba611cd0d0241f8ec7ce26",
+      "bytes": 5146
+    },
+    {
+      "path": "simulation/bnn_modules/bnn_numba.py",
+      "source_path": "final_submission/replication_package/simulation/bnn_modules/bnn_numba.py",
+      "blob_sha": "850edbcf813f5d70c0cb1f43e6a0013f2ab18a33",
+      "bytes": 3634
+    },
+    {
+      "path": "simulation/bnn_modules/bnn_torch.py",
+      "source_path": "final_submission/replication_package/simulation/bnn_modules/bnn_torch.py",
+      "blob_sha": "c41a0009575b1265a736be56154eb6571c61fdc2",
+      "bytes": 6498
+    },
+    {
+      "path": "simulation/environment_ubuntu.yml",
+      "source_path": "final_submission/replication_package/simulation/environment_ubuntu.yml",
+      "blob_sha": "61b36d53e350d669b01c4b137766149dcf83549f",
+      "bytes": 503
+    },
+    {
+      "path": "simulation/environment_windows.yml",
+      "source_path": "final_submission/replication_package/simulation/environment_windows.yml",
+      "blob_sha": "671547f20e009f06361a0b01cf355b839a7613c4",
+      "bytes": 395
+    },
+    {
+      "path": "simulation/figures/all_figures.py",
+      "source_path": "final_submission/replication_package/simulation/figures/all_figures.py",
+      "blob_sha": "099d83718cc5624818693e4f87d95702b690948b",
+      "bytes": 5279
+    },
+    {
+      "path": "simulation/figures/figure_BLP.py",
+      "source_path": "final_submission/replication_package/simulation/figures/figure_BLP.py",
+      "blob_sha": "ab406127c82b5bb0ab9d01bdc26e6c054448e9aa",
+      "bytes": 5383
+    },
+    {
+      "path": "simulation/figures/figure_complements.py",
+      "source_path": "final_submission/replication_package/simulation/figures/figure_complements.py",
+      "blob_sha": "86fe2b3f9ddd07820f7f201ef4e39f2b170c56e6",
+      "bytes": 4944
+    },
+    {
+      "path": "simulation/figures/figure_variety.py",
+      "source_path": "final_submission/replication_package/simulation/figures/figure_variety.py",
+      "blob_sha": "fa041624f6d3fbae473848ca191a95a8b6bc855f",
+      "bytes": 2418
+    },
+    {
+      "path": "simulation/simulation_codes/__init__.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/__init__.py",
+      "blob_sha": "f993ef0dc9b7fc4be7c87c039d01057a285d4147",
+      "bytes": 81
+    },
+    {
+      "path": "simulation/simulation_codes/calibrate_literature.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/calibrate_literature.py",
+      "blob_sha": "4bffa2763050af5bd76d14577eb979167201b48d",
+      "bytes": 8891
+    },
+    {
+      "path": "simulation/simulation_codes/table_1_models.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_1_models.py",
+      "blob_sha": "acc0feeb04d4bb00a3b44e74d631fbb21b167404",
+      "bytes": 2845
+    },
+    {
+      "path": "simulation/simulation_codes/table_2_scalability.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_2_scalability.py",
+      "blob_sha": "d76b2110cb3f31d1f5316dfcea5ec0d74e9e46de",
+      "bytes": 5048
+    },
+    {
+      "path": "simulation/simulation_codes/table_2_scalability_20.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_2_scalability_20.py",
+      "blob_sha": "71ca40cffdcda40b3b04484880dc5c43943bfdbd",
+      "bytes": 5055
+    },
+    {
+      "path": "simulation/simulation_codes/table_3_tuning.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_3_tuning.py",
+      "blob_sha": "64941d20fe820cf388a3cee3f57b3b1b64f19d95",
+      "bytes": 3278
+    },
+    {
+      "path": "simulation/simulation_codes/table_3_tuning_extended.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_3_tuning_extended.py",
+      "blob_sha": "621cece33270fad76940c9907ef63eb9b32237ac",
+      "bytes": 3300
+    },
+    {
+      "path": "simulation/simulation_codes/table_3_tuning_reduced_form.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_3_tuning_reduced_form.py",
+      "blob_sha": "69fbbe2de8e9eea5154c7d68173e4eab2115814f",
+      "bytes": 2690
+    },
+    {
+      "path": "simulation/simulation_codes/table_4_extra_models.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_4_extra_models.py",
+      "blob_sha": "167cf0dd232f9a556719f5f101fe23327e73bbd3",
+      "bytes": 2829
+    },
+    {
+      "path": "simulation/simulation_codes/table_5_supply.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_5_supply.py",
+      "blob_sha": "adb8593c699391a9a68ce6eaa6061e54ccc874f8",
+      "bytes": 6947
+    },
+    {
+      "path": "simulation/simulation_codes/table_6_baseline_pricing.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_6_baseline_pricing.py",
+      "blob_sha": "d3cd6194fbf2d57920bfadf3e16a4d69c127cd71",
+      "bytes": 17330
+    },
+    {
+      "path": "simulation/simulation_codes/table_6_literature.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_6_literature.py",
+      "blob_sha": "8cf4ae081eb4c4b5a9dc8a01559416a3e5b2ac89",
+      "bytes": 11182
+    },
+    {
+      "path": "simulation/simulation_codes/table_appendix_pyblp.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_appendix_pyblp.py",
+      "blob_sha": "7a7db756cbda7b0dd34812ff1bf85793900718a7",
+      "bytes": 6252
+    },
+    {
+      "path": "simulation/simulation_codes/table_polynomial_time.py",
+      "source_path": "final_submission/replication_package/simulation/simulation_codes/table_polynomial_time.py",
+      "blob_sha": "1e231a92932586f3990f303f35a434cb91534787",
+      "bytes": 3913
+    },
+    {
+      "path": "simulation/simulation_results/calibrated_params.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/calibrated_params.json",
+      "blob_sha": "d49b9ee89c1ac9ff077771dfd60264f62e47202e",
+      "bytes": 3085
+    },
+    {
+      "path": "simulation/simulation_results/calibration_summary.txt",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/calibration_summary.txt",
+      "blob_sha": "e7182dfca4504df2e549285ec5677a6b44d43956",
+      "bytes": 4668
+    },
+    {
+      "path": "simulation/simulation_results/fig_elas_curve_BLP.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/fig_elas_curve_BLP.json",
+      "blob_sha": "c59033e808bd278f38acb3717db7e8a16d75ccbb",
+      "bytes": 5986
+    },
+    {
+      "path": "simulation/simulation_results/fig_elas_curve_complements.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/fig_elas_curve_complements.json",
+      "blob_sha": "4d6a5a63b75c552ccb707983b991939f6001b48a",
+      "bytes": 5871
+    },
+    {
+      "path": "simulation/simulation_results/fig_elas_curve_variety.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/fig_elas_curve_variety.json",
+      "blob_sha": "4935254e644998f37316f6fbd3fccc1773515173",
+      "bytes": 1544
+    },
+    {
+      "path": "simulation/simulation_results/table_1_models.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_1_models.json",
+      "blob_sha": "feb8bc589d94150fe8303ab69aca3354c194ddfc",
+      "bytes": 40115
+    },
+    {
+      "path": "simulation/simulation_results/table_2_scalability.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_2_scalability.json",
+      "blob_sha": "d34d6ff380f293494e036769decfdaf3faf3b7d0",
+      "bytes": 2034
+    },
+    {
+      "path": "simulation/simulation_results/table_2_scalability_20.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_2_scalability_20.json",
+      "blob_sha": "61aa5de258cf22771ca5ca4b8368cb0bea182fe5",
+      "bytes": 2035
+    },
+    {
+      "path": "simulation/simulation_results/table_3_tuning_full.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_3_tuning_full.json",
+      "blob_sha": "d524217eba7d90d45ecb97a1eae625147f7a4fd2",
+      "bytes": 203083
+    },
+    {
+      "path": "simulation/simulation_results/table_3_tuning_full_extended.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_3_tuning_full_extended.json",
+      "blob_sha": "cb002f86da1d55cf34b0477f6bba47fdc37c80d7",
+      "bytes": 153139
+    },
+    {
+      "path": "simulation/simulation_results/table_3_tuning_reduced_form.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_3_tuning_reduced_form.json",
+      "blob_sha": "3a082b2f1f163de9aa2a2c7365f6aab8a5b05efb",
+      "bytes": 49903
+    },
+    {
+      "path": "simulation/simulation_results/table_4_extra_models.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_4_extra_models.json",
+      "blob_sha": "17f995600fca4a7c8c2f57a773b9521459815d8e",
+      "bytes": 26939
+    },
+    {
+      "path": "simulation/simulation_results/table_5_supply.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_5_supply.json",
+      "blob_sha": "20246894c6c1fe4e1aaaaa63284942cd37bc97fc",
+      "bytes": 19041
+    },
+    {
+      "path": "simulation/simulation_results/table_6_baseline_pricing.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_6_baseline_pricing.json",
+      "blob_sha": "398684f9e85f6765e2b1a8e96938c50467027bfe",
+      "bytes": 9920
+    },
+    {
+      "path": "simulation/simulation_results/table_6_literature.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_6_literature.json",
+      "blob_sha": "ab5611ba3e082426c1c477fe61a2cc7461f9d5e7",
+      "bytes": 14496
+    },
+    {
+      "path": "simulation/simulation_results/table_appendix_pyblp.json",
+      "source_path": "final_submission/replication_package/simulation/simulation_results/table_appendix_pyblp.json",
+      "blob_sha": "717f650ac4c5b903f0bfa77393c5bf9c08568f04",
+      "bytes": 169
+    },
+    {
+      "path": "simulation/tables/all_tables.py",
+      "source_path": "final_submission/replication_package/simulation/tables/all_tables.py",
+      "blob_sha": "815864566f143c994c2c54be22be5832d49b5243",
+      "bytes": 9483
+    },
+    {
+      "path": "simulation/tables/table_1_models.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_1_models.tex",
+      "blob_sha": "539e321ac0683e5855e9806ecd2341c97826a599",
+      "bytes": 612
+    },
+    {
+      "path": "simulation/tables/table_2_scalability.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_2_scalability.tex",
+      "blob_sha": "5f4bb542c36a1b71ed0823f0884971718b51a53a",
+      "bytes": 616
+    },
+    {
+      "path": "simulation/tables/table_2_scalability_20.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_2_scalability_20.tex",
+      "blob_sha": "ee2d7d18dc54286a5c2bc74fcb7da5e90a7eea30",
+      "bytes": 616
+    },
+    {
+      "path": "simulation/tables/table_3_opt_tuning_cross.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_3_opt_tuning_cross.tex",
+      "blob_sha": "c98c457eef13fc09aa0060250c0dd04b4c3d76c6",
+      "bytes": 876
+    },
+    {
+      "path": "simulation/tables/table_3_opt_tuning_own.csv",
+      "source_path": "final_submission/replication_package/simulation/tables/table_3_opt_tuning_own.csv",
+      "blob_sha": "4cad46aed808a1cd1e63b43c6be46251488fb65e",
+      "bytes": 516
+    },
+    {
+      "path": "simulation/tables/table_3_opt_tuning_own.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_3_opt_tuning_own.tex",
+      "blob_sha": "b2553ead88f96265dc815dc06b675fe72c47853f",
+      "bytes": 969
+    },
+    {
+      "path": "simulation/tables/table_3_opt_tuning_own_reduced_form.csv",
+      "source_path": "final_submission/replication_package/simulation/tables/table_3_opt_tuning_own_reduced_form.csv",
+      "blob_sha": "ee9d3a0540fdc41ce3fee62c958551aa200bf35f",
+      "bytes": 353
+    },
+    {
+      "path": "simulation/tables/table_3_opt_tuning_own_reduced_form.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_3_opt_tuning_own_reduced_form.tex",
+      "blob_sha": "15dfb48b42cfa46e4832d8616ec356ba930245ae",
+      "bytes": 678
+    },
+    {
+      "path": "simulation/tables/table_4_extra_models.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_4_extra_models.tex",
+      "blob_sha": "d5abc8b19b9ec2036d7d1707fc2493142d4ac00a",
+      "bytes": 473
+    },
+    {
+      "path": "simulation/tables/table_5_supply.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_5_supply.tex",
+      "blob_sha": "8ad5081bf1c02623a48c378f5beb0f609ca00df9",
+      "bytes": 612
+    },
+    {
+      "path": "simulation/tables/table_6_literature.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_6_literature.tex",
+      "blob_sha": "5d02bcdf3a54745bca7889d4d697e54243a0b304",
+      "bytes": 958
+    },
+    {
+      "path": "simulation/tables/table_app_pyblp.tex",
+      "source_path": "final_submission/replication_package/simulation/tables/table_app_pyblp.tex",
+      "blob_sha": "b4c6814ede805f180ad464785493c4fa821aa520",
+      "bytes": 317
+    }
+  ],
+  "omitted": [
+    "empirical/outputs/step1_processed_data/zones/step1_zone_distances.pkl"
+  ],
+  "note": "JSON distances retained; raw trip parquet data must be obtained separately.",
+  "adaptations": [
+    "README.md: corrected data availability",
+    "empirical/README.md: corrected data availability and distinguished upstream reproducibility claims"
+  ]
+}

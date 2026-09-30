@@ -1,0 +1,16 @@
+{
+  "host": "jingbo-hk-tower",
+  "jax": "0.11.2",
+  "devices": [
+    "cpu:0"
+  ],
+  "n": 20000,
+  "m": 64,
+  "d": 4,
+  "dtype": "float64",
+  "first_call_seconds": 0.13166126911528409,
+  "warm_median_seconds": 0.037888132967054844,
+  "repeats": 5,
+  "numpy_max_abs_error": 4.996003610813204e-16,
+  "note": "CPU-tested JAX; GPU and TPU JAX runtimes not tested"
+}

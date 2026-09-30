@@ -1,0 +1,19 @@
+{
+  "host": "jingbo-hk-tower",
+  "torch": "2.14.0+cu130",
+  "device": "cpu",
+  "n": 20000,
+  "m": 64,
+  "d": 4,
+  "dtype": "float64",
+  "threads": 4,
+  "warmup": 1,
+  "repeats": 5,
+  "numpy_max_abs_error": 3.122502256758253e-16,
+  "optimized_seconds": 0.029468039982020855,
+  "elasticity_max_abs_error": 3.4751646005304337e-12,
+  "baseline_seconds": 0.13341863709501922,
+  "speedup": 4.527570791149363,
+  "baseline": "actual elasticity bnn_2scale_torch, one call per query",
+  "jax": "not installed"
+}

@@ -1,0 +1,94 @@
+{
+  "host": "jingbo-hk-tower",
+  "platform": "Linux-6.8.0-139-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "numpy": "2.5.3",
+  "seed": 20260930,
+  "warmup": 1,
+  "repeats": 5,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4"
+  },
+  "checks": {
+    "weights_n1000_max_abs_error": 3.043051921558515e-14,
+    "weights_n10000_max_abs_error": 7.71739443183872e-14,
+    "weights_n100000_max_abs_error": 3.9821173702242474e-13,
+    "prediction_gamma_reference_max_abs_error": 7.2649108950884056e-12,
+    "bootstrap_max_abs_error": 1.472433286409114e-14,
+    "patrick_rounded_ratio_bias_residual": -0.006181898316052203,
+    "actual_integer_ratio_bias_residual": -1.1102230246251565e-16
+  },
+  "timings": [
+    {
+      "name": "rank_weights",
+      "baseline_seconds": 4.2893923819065094e-05,
+      "optimized_seconds": 1.633097417652607e-05,
+      "speedup": 2.6265379735105,
+      "n": 1000,
+      "s": 20,
+      "baseline": "SciPy vectorized log-gamma"
+    },
+    {
+      "name": "rank_weights",
+      "baseline_seconds": 0.0002761969808489084,
+      "optimized_seconds": 5.113799124956131e-05,
+      "speedup": 5.401013495055455,
+      "n": 10000,
+      "s": 20,
+      "baseline": "SciPy vectorized log-gamma"
+    },
+    {
+      "name": "rank_weights",
+      "baseline_seconds": 0.003399265930056572,
+      "optimized_seconds": 0.0010975019540637732,
+      "speedup": 3.0972755150639566,
+      "n": 100000,
+      "s": 100,
+      "baseline": "SciPy vectorized log-gamma"
+    },
+    {
+      "name": "64_queries",
+      "baseline_seconds": 0.16944177099503577,
+      "optimized_seconds": 0.08667816314846277,
+      "speedup": 1.954838045019656,
+      "n": 20000,
+      "d": 4,
+      "m": 64,
+      "baseline": "scalar elasticity-style NumPy/SciPy formulation; not Numba runtime"
+    },
+    {
+      "name": "held_out_grid",
+      "baseline_seconds": 0.5286367849912494,
+      "optimized_seconds": 0.09055927698500454,
+      "speedup": 5.837466934268754,
+      "n": 20000,
+      "d": 4,
+      "m": 64,
+      "candidates": 6,
+      "baseline": "separate optimized fit/predict per pair"
+    },
+    {
+      "name": "bootstrap",
+      "baseline_seconds": 0.11272851517423987,
+      "optimized_seconds": 0.018717771861702204,
+      "speedup": 6.022539221395783,
+      "n": 5000,
+      "d": 3,
+      "m": 3,
+      "B": 99,
+      "baseline": "explicit paired resampling and optimized refits"
+    },
+    {
+      "name": "jackknife",
+      "baseline_seconds": 0.15474651800468564,
+      "optimized_seconds": 0.00015544192865490913,
+      "speedup": 995.5262350625658,
+      "n": 1000,
+      "d": 3,
+      "m": 1,
+      "baseline": "1000 explicit delete-one refits"
+    }
+  ]
+}
