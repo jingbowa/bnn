@@ -29,5 +29,5 @@ increment bound, with smoothness and boundary/support control. Uniform
 consistency alone does not supply a derivative rate. Supplementary notes
 should state their assumptions and proof version alongside the result.
 
-This resource references the papers without certifying a new stand-alone
-uniform-convergence proof. Reviewed notes can be added as a versioned development.
+The papers contain the formal statements and proofs. Supplementary theory notes
+can be added with versioned assumptions and sources as this resource develops.

@@ -41,7 +41,7 @@ python -m pip install .
 python examples/regression.py
 ```
 
-Install from source; this candidate is not a published PyPI distribution.
+Install from source; a PyPI distribution has not been published.
 
 ## Regression and inference
 

@@ -10,5 +10,6 @@ and accelerator memory. Keep fleet orchestration and credentials outside this
 repository. Timings must specify workloads, environments, warmup, repeats,
 baselines, and synchronization. Preserve paper-specific replication settings.
 
-Candidate stays private until maintainer approval. Do not deploy the personal
-website or change repository visibility as a development step.
+The repository and research website are public releases. Keep internal proof
+reviews and professional-positioning notes outside public source. Treat changes
+to published theory statements as substantive revisions with explicit sources.
