@@ -1,0 +1,42 @@
+<header class="page-heading"><p class="page-label">Software</p><h1>Run the estimator.</h1><p class="lead">A focused Python package for base BNN, two-scale prediction, and regression inference, with CPU and accelerator backends.</p><div class="actions"><a class="button" href="https://github.com/jingbowa/bnn/releases/tag/v0.1.0">Get release 0.1.0</a><a class="button secondary" href="https://github.com/jingbowa/bnn">Browse the source</a></div></header>
+<div class="article-layout"><aside class="toc" aria-label="On this page"><p>Get started</p><a href="#install">Install</a><a href="#regression">Regression and inference</a><a href="#backends">Choose a backend</a><a href="#choices">Statistical choices</a><a href="#verification">Verification and sources</a></aside><article class="prose">
+<section id="install"><h2>Install from the release or source</h2><p>Python 3.10+ and NumPy 1.24+. The base installation uses NumPy. The distribution is named <code>bagged-nearest-neighbors</code>; the Python import is <code>bnn</code>.</p><pre><code>python -m pip install https://github.com/jingbowa/bnn/releases/download/v0.1.0/bagged_nearest_neighbors-0.1.0-py3-none-any.whl</code></pre><p>For the examples and current source:</p><pre><code>git clone https://github.com/jingbowa/bnn.git
+cd bnn
+python -m pip install .</code></pre><p>The release is distributed through GitHub. A PyPI distribution has not been published.</p></section>
+<section id="regression"><h2>A complete regression example</h2><pre><code>import numpy as np
+from bnn import BNN, TwoScaleBNN
+
+rng = np.random.default_rng(2026)
+X = rng.uniform(0, 1, size=(500, 1))
+y = np.sin(2 * np.pi * X[:, 0]) + rng.normal(0, 0.15, 500)
+queries = np.linspace(0.1, 0.9, 9).reshape(-1, 1)
+
+base = BNN(s=20).fit(X, y)
+model = TwoScaleBNN(s1=20, s2=40).fit(X, y)
+prediction = model.predict(queries)
+bootstrap = model.bootstrap(
+    queries, n_resamples=199, random_state=42
+)
+jackknife = model.jackknife(queries)
+
+print(prediction)
+print(bootstrap.standard_error)
+print(jackknife.standard_error)</code></pre><p>Features have shape <code>(n, d)</code>, the response has shape <code>(n,)</code>, and query predictions have shape <code>(m,)</code>. Inputs must be finite. Scales are integers satisfying <code>1 ≤ s ≤ n</code> or <code>1 ≤ s1 &lt; s2 ≤ n</code>. The largest jackknife scale must be smaller than n.</p><p>Bootstrap draws are paired across queries; the routines hold scales fixed. Their uncertainty estimates do not incorporate a separate scale-selection procedure. Use the paper's inference conditions when constructing confidence intervals.</p></section>
+<section id="backends"><h2>Choose the computation path</h2><div class="table-wrap" tabindex="0" role="region" aria-label="Backend support"><table><caption>Current implementation and hardware checks</caption><thead><tr><th scope="col">Backend</th><th scope="col">Routines</th><th scope="col">Verified execution</th></tr></thead><tbody><tr><th scope="row">NumPy</th><td>Base/two-scale prediction, regression bootstrap and jackknife, held-out scale selection</td><td>CPU, float64</td></tr><tr><th scope="row">PyTorch</th><td>Batched base/two-scale prediction</td><td>CPU and NVIDIA CUDA, float32/float64</td></tr><tr><th scope="row">JAX</th><td>JIT/batched base/two-scale prediction</td><td>CPU, float32/float64. GPU and TPU execution has not been checked.</td></tr></tbody></table></div><pre><code>python -m pip install '.[torch]'
+# Or, for JAX:
+python -m pip install '.[jax]'</code></pre><pre><code>from bnn.torch_backend import TorchTwoScaleBNN
+
+model = TorchTwoScaleBNN(
+    20, 40, device="cuda", batch_size=8
+).fit(X, y)
+prediction = model.predict(queries)  # Tensor on the selected device</code></pre><pre><code>import jax
+jax.config.update("jax_enable_x64", True)
+from bnn.jax_backend import JAXTwoScaleBNN
+
+model = JAXTwoScaleBNN(
+    20, 40, device=jax.devices()[0], batch_size=8
+).fit(X, y)
+prediction = model.predict(queries)  # JAX array</code></pre><p>Use NumPy for the package's regression resampling. Accelerator installation depends on the hardware runtime: follow the official <a href="https://pytorch.org/get-started/locally/">PyTorch</a> and <a href="https://docs.jax.dev/en/latest/installation.html">JAX</a> instructions. JAX's first call includes compilation; precision requires an explicit choice.</p></section>
+<section id="choices"><h2>Make the statistical choices explicit</h2><p>Distance uses the features you supply. Standardization, transformations, and feature inclusion therefore define the neighborhood. Apply preprocessing consistently to training data and queries. Adding a dimension changes both the geometry and the dimension-dependent two-scale coefficients.</p><p>Exact distance ties preserve the original training-row order. Float32 can change ordering for nearly equal distances. The two-scale coefficients use the actual integer scale ratio, and negative weights are intentional.</p><p><code>select_scales</code> scores supplied pairs using global held-out MSE and reuses query orderings. This is a practical helper; the paper-specific pointwise tuning procedures remain in the replication materials.</p></section>
+<section id="verification"><h2>Inspect the evidence and extend the code</h2><p>Independent checks compare weights with binomial coefficients, predictions with exhaustive subsample averages, bootstrap with explicit resampling, and jackknife with delete-one refits. Backend checks examine numerical agreement and precision choices.</p><p>The <a href="https://github.com/jingbowa/bnn/blob/main/docs/verification.md">verification record</a> supplies environments, measured workloads, and limits. The <a href="https://github.com/jingbowa/bnn/tree/main/replication/elasticity">replication archive</a> contains the paper-specific extensions and saved results with provenance.</p><p>The current package is developed from the elasticity implementation. Patrick Vossler's <a href="https://github.com/patrickvossler18/tdnn_package">TDNN R/C++ package</a> and <a href="https://github.com/patrickvossler18/tdnn_paper">JASA replication</a> are companion resources. Their complete R execution was not part of this verification.</p><p><a href="/papers/">Citation guidance</a> · <a href="https://github.com/jingbowa/bnn/issues">Report an issue</a> · <a href="https://github.com/jingbowa/bnn/blob/main/LICENSE">MIT license</a>.</p></section>
+</article></div>

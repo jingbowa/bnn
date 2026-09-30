@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-30",
+  "statistical_scope": "Base BNN, two-scale estimation, pointwise and uniform inference. Price demonstrations are omitted.",
+  "appendix": {
+    "authors": [
+      "Jingbo Wang",
+      "Yufeng Huang"
+    ],
+    "title": "Online Appendix to Scalable Just-in-Time Price Elasticity Estimation",
+    "date": "2026-07-07",
+    "source_repository": "jingbowa/elasticity_minor_round",
+    "source_path": "final_submission/3_online_appendix.pdf",
+    "blob_sha": "94ee0ef86c2c5fd2a4cc5e15e97e1cb11fbe40b5",
+    "public_asset": "assets/elasticity-appendix.pdf"
+  },
+  "results": [
+    {
+      "topic": "Exact representation",
+      "source": "Steele (2009); JASA Section 2, equations 5–6",
+      "kind": "exact identity"
+    },
+    {
+      "topic": "Base bias",
+      "source": "JASA Theorem 1",
+      "kind": "source summary"
+    },
+    {
+      "topic": "Pointwise normality",
+      "source": "JASA Theorems 2–3",
+      "kind": "source summary"
+    },
+    {
+      "topic": "Two-scale convergence",
+      "source": "JASA Theorem 4",
+      "kind": "source summary"
+    },
+    {
+      "topic": "Variance inference",
+      "source": "JASA Section 4 and supplement",
+      "kind": "source summary"
+    },
+    {
+      "topic": "Uniform consistency",
+      "source": "Final online appendix C.3",
+      "kind": "source summary"
+    },
+    {
+      "topic": "Uniform normal approximation",
+      "source": "Final online appendix C.4",
+      "kind": "source summary"
+    },
+    {
+      "topic": "Derivative and rate analysis",
+      "source": "Final online appendix C.5–C.6",
+      "kind": "source summary; exact rate formulas are not reproduced"
+    },
+    {
+      "topic": "Quotients",
+      "source": "Final online appendix C.7",
+      "kind": "source summary"
+    },
+    {
+      "topic": "Uniform bootstrap and transformations",
+      "source": "Final online appendix C.8–C.11",
+      "kind": "source summary"
+    },
+    {
+      "topic": "Centered finite-difference bound",
+      "source": "Triangle inequality and Taylor remainder on an admissible shifted region",
+      "kind": "explanatory deterministic inequality"
+    }
+  ],
+  "figures": [
+    {
+      "asset": "assets/regression.svg",
+      "script": "examples/figures.py",
+      "kind": "synthetic illustration"
+    }
+  ],
+  "benchmarks": {
+    "sources": [
+      "docs/benchmark_cpu.json",
+      "docs/benchmark_cpu_backends.json",
+      "docs/benchmark_cuda_backends.json",
+      "docs/benchmark_jax.json"
+    ],
+    "historical_source": "replication/elasticity/simulation/simulation_results/table_2_scalability.json"
+  },
+  "browser_example": {
+    "seed": 2026,
+    "n": 24,
+    "truth": "0.75*sin(2*pi*x)+0.4*x",
+    "noise": "Independent seeded bounded noise in [-0.325,0.325]",
+    "scope": "Illustration, not a performance or coverage study"
+  }
+}

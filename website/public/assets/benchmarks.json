@@ -1,0 +1,60 @@
+{
+  "current": [
+    {
+      "label": "NumPy CPU",
+      "seconds": 0.08667816314846277,
+      "context": "Independent reference formulation; separate generated sample",
+      "source": "docs/benchmark_cpu.json"
+    },
+    {
+      "label": "PyTorch CPU",
+      "seconds": 0.029468039982020855,
+      "context": "NumPy agreement and original scalar-call comparison",
+      "source": "docs/benchmark_cpu_backends.json"
+    },
+    {
+      "label": "PyTorch CUDA \u00b7 RTX 3090",
+      "seconds": 0.002392522059381008,
+      "context": "Synchronized boundaries; NumPy and original comparison",
+      "source": "docs/benchmark_cuda_backends.json"
+    },
+    {
+      "label": "JAX CPU",
+      "seconds": 0.037888132967054844,
+      "context": "Warmed execution; first call includes compilation",
+      "source": "docs/benchmark_jax.json"
+    }
+  ],
+  "historical": [
+    {
+      "n": 5000,
+      "numba": "0.0066 / 0.0468",
+      "cpu": "0.0404 / 1.1523",
+      "gpu": "0.0032 / 0.2872"
+    },
+    {
+      "n": 20000,
+      "numba": "0.0234 / 0.0814",
+      "cpu": "0.0361 / 5.2778",
+      "gpu": "0.0139 / 0.7940"
+    },
+    {
+      "n": 80000,
+      "numba": "0.1050 / 0.1867",
+      "cpu": "0.1290 / 15.9575",
+      "gpu": "0.0305 / 2.5163"
+    },
+    {
+      "n": 320000,
+      "numba": "0.3619 / 1.0241",
+      "cpu": "0.3108 / 29.4274",
+      "gpu": "0.0511 / 3.5945"
+    },
+    {
+      "n": 1280000,
+      "numba": "1.4909 / 5.7144",
+      "cpu": "1.0065 / 116.9538",
+      "gpu": "0.0817 / 6.3980"
+    }
+  ]
+}

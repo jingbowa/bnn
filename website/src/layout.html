@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title><meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ canonical }}"><meta property="og:type" content="website"><meta property="og:title" content="{{ title }}"><meta property="og:description" content="{{ description }}"><meta property="og:url" content="{{ canonical }}"><meta property="og:image" content="{{ origin }}/assets/social.png">
+<meta name="theme-color" content="#a91f42"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css"><script type="module" src="/assets/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="header-inner"><a class="wordmark" href="/" aria-label="BNN home"><span class="mark" aria-hidden="true">bnn</span><span class="wordmark-detail">bagged nearest neighbors</span></a><button class="menu-button" aria-expanded="false" aria-controls="navigation">Menu</button><nav id="navigation" aria-label="Main navigation">{{ nav }}</nav></div>
+</header>
+<main id="main">{{ content }}</main>
+<footer class="site-footer"><div class="footer-inner"><p><strong>BNN</strong><br>Bagged nearest neighbors</p><p>Maintained by <a href="https://jingbowa.github.io/">Jingbo Wang</a>.<br>Scientific contributions are attributed in the <a href="/papers/">papers and references</a>.</p><p><a href="https://github.com/jingbowa/bnn">Source &amp; issues</a><br><a href="/assets/references.bib" download>Download BibTeX</a></p></div></footer>
+{{ scripts }}
+</body>
+</html>

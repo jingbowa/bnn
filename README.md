@@ -2,7 +2,7 @@
 
 Nonparametric estimation through the distribution of nearest neighbors: a Python
 package, algorithm notes, reproducible examples, and paper replication materials.
-Research resource: [jingbowa.github.io/bnn](https://jingbowa.github.io/bnn/).
+Research resource: [jingbowa.github.io/bnn](https://bnn-production-9654.up.railway.app/).
 
 Explore: [theory](docs/theory.md) · [algorithms](docs/algorithms.md) ·
 [replication](docs/replication.md) · [verification](docs/verification.md).
