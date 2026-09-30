@@ -41,6 +41,7 @@ deployment keeps package-only commits from rebuilding the website. Use `railway 
 with these explicit project/environment/service IDs. For rollback, redeploy the
 previous successful deployment through Railway. No secrets are needed by the site.
 
-The supported Railway infrastructure file is `.railway/railway.ts`; review with
-`railway config plan` before `railway config apply`. Dockerfile detection provides
-the build context. The static service has no database, volume, or application secrets.
+Service settings are persisted directly in Railway and documented in
+`railway-service.json`. Review `railway environment config --json` before changing
+settings. The legacy Railway Config File override is cleared. The static service
+has no database, volume, or application secrets.
