@@ -1,0 +1,17 @@
+{
+  "device": "cuda",
+  "n": 5000,
+  "d": 3,
+  "queries": 3,
+  "s1": 7,
+  "s2": 14,
+  "step": 0.1,
+  "dtype": "float64",
+  "threads": 4,
+  "repeats": 5,
+  "max_abs_error_reference": 2.867150961094467e-13,
+  "max_abs_error_numpy": 6.800116025829084e-15,
+  "baseline_seconds": 0.007642870768904686,
+  "optimized_seconds": 0.0007762410677969456,
+  "baseline": "original p_elas_2scale_torch, refits quadratic first stage per query"
+}

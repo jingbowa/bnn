@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "Cite JASA for two-scale inference; also cite Wang and Huang for elasticity. See docs/references.bib."
+title: "BNN: Bagged Nearest Neighbors"
+type: software
+version: 0.1.0
+repository-code: "https://github.com/jingbowa/bnn"
+url: "https://github.com/jingbowa/bnn"
+authors:
+  - family-names: Wang
+    given-names: Jingbo
+references:
+  - type: article
+    title: "Scalable Just-in-Time Price Elasticity Estimation"
+    authors:
+      - {family-names: Wang, given-names: Jingbo}
+      - {family-names: Huang, given-names: Yufeng}
+    journal: "Management Science"
+    year: 2026
+    notes: "Forthcoming"
+    url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3557359"
+preferred-citation:
+  type: article
+  title: "Optimal Nonparametric Inference with Two-Scale Distributional Nearest Neighbors"
+  authors:
+    - {family-names: Demirkaya, given-names: Emre}
+    - {family-names: Fan, given-names: Yingying}
+    - {family-names: Gao, given-names: Lan}
+    - {family-names: Lv, given-names: Jinchi}
+    - {family-names: Vossler, given-names: Patrick}
+    - {family-names: Wang, given-names: Jingbo}
+  journal: "Journal of the American Statistical Association"
+  volume: 119
+  issue: 545
+  start: 297
+  end: 307
+  year: 2024
+  doi: "10.1080/01621459.2022.2115375"

@@ -1,0 +1,17 @@
+{
+  "device": "cpu",
+  "n": 5000,
+  "d": 3,
+  "queries": 3,
+  "s1": 7,
+  "s2": 14,
+  "step": 0.1,
+  "dtype": "float64",
+  "threads": 4,
+  "repeats": 5,
+  "max_abs_error_reference": 3.164135620181696e-13,
+  "max_abs_error_numpy": 3.3556490919295356e-14,
+  "baseline_seconds": 0.00875007500872016,
+  "optimized_seconds": 0.0033143588807433844,
+  "baseline": "original p_elas_2scale_torch, refits quadratic first stage per query"
+}

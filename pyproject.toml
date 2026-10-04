@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bagged-nearest-neighbors"
+version = "0.1.0"
+description = "Bagged nearest neighbors for nonparametric estimation and inference"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Jingbo Wang"}]
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+torch = ["torch>=2.0"]
+jax = ["jax>=0.4.26"]
+benchmark = ["scipy>=1.10", "matplotlib>=3.8"]
+
+[project.urls]
+Homepage = "https://github.com/jingbowa/bnn"
+Repository = "https://github.com/jingbowa/bnn"
+
+[tool.setuptools.packages.find]
+where = ["src"]
